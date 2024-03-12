@@ -1,0 +1,674 @@
+
+@font-face {
+    font-family: 'montserratregular';
+    src: url('../fonts/montserrat-regular-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'montserratlight';
+    src: url('../fonts/montserrat-light-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'montserratmedium';
+    src: url('../fonts/montserrat-medium-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'montserratsemibold';
+    src: url('../fonts/montserrat-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'montserratbold';
+    src: url('../fonts/montserrat-bold-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body{
+    min-width: 1100px;
+    margin: 0;
+    padding: 0;
+    font-family: "robotoregular","Arial",sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #000;
+}
+
+ul {
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.header {
+    min-height: 800px;
+    background-color: #F9F6F1;
+}
+
+.section {
+    width: 100%;
+}
+
+.header-menu {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    min-height: 90px;
+    z-index: 100;
+    background-color: #F9F6F1;
+}
+
+.container {
+    position: relative;
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.section__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1110px;
+    height: 65px;   
+    align-items: center;
+}
+
+.mainmenu__list {
+    display: flex;
+    flex-direction: row;
+}
+
+.mainmenu__item1 {
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.menu__link{
+    color: #000;
+}
+.Polygon {
+    margin: 4px 0;   
+}
+
+.basket__list {
+    display: flex; 
+    align-items: center;
+}
+
+.basket__item {
+    padding-left: 15.25px;
+}
+
+.mainmenu__item2 {
+    padding-left: 35px;
+}
+
+
+
+.banner {
+    margin-top: 90px;
+}
+
+.slider__wrapper {
+    position: relative;
+}
+
+.slider__item {
+    display: flex;
+    padding-top: 166px;
+    justify-content: space-between;
+    min-height: 564px;
+    background: url('..//img/running_shoes.png') no-repeat right center;
+}
+
+.slider__text {
+    font-size: 30px;
+}
+
+.slider__big-text {
+    font-family:  "montserratbold", "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 55px;
+    text-transform: uppercase;
+}
+
+.button {
+    display: block;
+    width: 240px;
+    padding: 22px 0;
+    text-align: center;
+    background-color: #d7b399;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+button{
+    cursor: pointer;
+}
+.slider__item-price {
+    font-family: "montserratbold", "Arial", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.slider__price--old {
+    font-size: 24px;
+    text-decoration-line: line-through;
+}
+
+.slider__price--new {
+    font-size: 42px;
+    color: #d84033;
+}
+
+.slider__button {
+    position: absolute;
+    top: 50%;   
+    border: 0;
+    background-color: #F9F6F1;
+}
+
+.slider__button--prev {
+    left: -102.96px;
+}
+
+.slider__button--next {
+    right: -102.96px;
+}
+
+.switch__list {
+    display: flex;
+    justify-content: center;
+}
+
+.slider__switch-button {
+    margin-left: 15px;
+    border: 0;
+    background-color: #F9F6F1;
+}
+
+
+.delivery {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 235px;
+    background-color: black;
+} 
+
+.section__delivery-text {    
+    text-align: center;
+    color:  #FFFFFF;
+}
+
+.head { 
+    font-size: 30px;
+    line-height: 37px;
+    font-weight: 700;
+    margin: 0;
+    text-align: center;  
+    text-transform: uppercase;   
+
+}
+
+.light {
+    font-weight: 400;
+    font-family: "montserratlight", "Arial", sans-serif; 
+}
+
+.not-head {
+    font-weight: 300;
+    font-size: 21px;
+    font-family: "montserratlight", "Arial", sans-serif; 
+}
+
+
+.men-women {
+    display: flex;
+    background: -webkit-linear-gradient(90deg, rgb(249, 246, 241) 50%, rgb(249, 224, 224, 1) 50%);
+    background: -moz-linear-gradient(90deg, rgb(249, 246, 241) 50%, rgba(249, 224, 224, 1) 50%);
+    background: linear-gradient(90deg, rgb(249, 246, 241) 50%, rgba(249, 224, 224, 1) 50%);
+}
+
+.section__men-women {
+    display: flex;
+}
+
+.block__men, .block__women {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 960px;
+    height: 250px;
+    padding-left: 21px;
+}
+
+.block__men-head_text, .block__women-head_text {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    padding-top: 60px;
+    text-transform: uppercase;
+}
+
+.font-weight_300 {
+    font-weight: 300;
+}
+
+.block__men-text, .block__women-text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.block__men-button {
+    width: 80px;
+    height: 30px;
+    border: 0;
+    background-color: #D7B399;
+}
+
+.block__men-women_img {
+    width: 190px;
+    height: 171px;
+    margin-top: 79px;
+    margin-left: 19px;
+    margin-right: 15px;
+}
+
+
+.dress__wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.dress__item {   
+    position: relative;
+    width: 276px;
+    height: 235px;
+    text-align: right;
+}
+
+.dress__item img {
+    margin-top: 20px;
+    width: 192px;
+}
+
+.dress__item p {
+    position: absolute;
+    bottom: 0px;
+    left: 30px;
+    font-size: 21px; 
+    text-transform: uppercase;
+}
+
+.dress__item--grey {
+    background-color: #f4f4f4;
+}
+
+.dress__item--cream {
+    background-color: #f9f6f1;
+}
+
+
+.new {
+    display: flex;
+    align-items: center;
+    margin-top: 420px;
+    height: 949px;
+    background-color: #fff;
+}
+
+.section__new {
+    height: 649px;
+    width: 1100px;
+}
+
+.new__head {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 103px;    
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "montserratbold", "Arial", sans-serif; 
+}
+
+.sections__new-blocks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.block__section-new {
+    height: 344px;
+    width: 259px;
+}
+
+.Corner_1, .Corner_4 {
+    margin-right: 205px;
+}
+
+.Dress_women {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.block__section-new__p {
+    text-align: justify;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+}
+
+.block__section-new__price {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #D7B399;
+}
+
+.block__new-button {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55px;
+    width: 220px;
+    border: 0;
+    margin-right: 445px;
+    margin-left: 445px;
+    margin-top: 103px;
+    background-color: #D7B399;
+}
+
+.block__new-button img {
+    margin-left: 9px;
+    margin-bottom: 4px;
+}
+
+.new-button__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+.discount {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 235px;
+    background-color: black;
+}
+
+.section_discount {   
+    color:  #FFFFFF;
+}
+
+.section__discount-text {
+    width: 1110px;
+    height: 40px;
+}
+
+.discount-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.discount-p {
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: "montserratsemibold", "Arial", sans-serif; 
+}
+
+#name {
+    height: 40px;
+    width: 255px;
+    background-color: #F9F6F1;
+}
+
+#name::placeholder {
+    padding-left: 20px;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.block__discount-button {
+    width: 185px;
+    height: 40px;       
+    border: 0;
+    background: #D7B399;
+}
+
+.discount-button__text {
+    display: flex;
+    margin-top: 12px;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #FFFFFF;
+    
+    text-transform: uppercase;
+}
+
+
+.sale {
+    display: flex;
+    align-items: center;
+    height: 949px;
+    background-color: #fff;
+}
+
+.section__sale {
+    height: 649px;
+    width: 1100px;
+}
+
+.sale__head {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 103px;    
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "montserratbold", "Arial", sans-serif; 
+}
+
+.sections__sale-blocks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.block__section-sale {
+    height: 344px;
+    width: 259px;
+}
+
+.Corner_1, .Corner_4 {
+    margin-right: 205px;
+}
+
+.Dress_women {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.block__section-sale__p {
+    text-align: justify;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+}
+
+.block__section-sale__price {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #D7B399;
+}
+
+.block__sale-button {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55px;
+    width: 220px;
+    border: 0;
+    margin-right: 445px;
+    margin-left: 445px;
+    margin-top: 103px;
+    background-color: #D7B399;
+}
+
+.block__sale-button img {
+    margin-left: 9px;
+    margin-bottom: 4px;
+}
+
+.sale-button__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+
+.footer {
+    min-height: 386px;   
+    color: white;
+}
+
+.footer-nav {
+    height: 311px;
+    background-color: black;
+}
+
+.section__footer-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 80px;
+}
+
+.footer-logo {
+    margin: 0; 
+}
+
+.logo {
+    align-items: center;
+}
+
+.section__footer-nav a {
+    padding-bottom: 10px;
+    color: #CBCFD4;
+}
+
+.Lorem {
+    color: #CBCFD4;
+    width: 200px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.footer-basic_links {
+    margin-left: 223px;
+}
+
+.H {
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.A {
+    padding-bottom: 10px;
+}
+
+
+.copyright {
+    min-height: 75px;
+}
+
+.section-copyright {
+    color: black;
+    background-color: white;
+}
+
+.Copyright-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+}
+
+.Copyright-text p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.Copyright-text a {
+    color: black
+}
